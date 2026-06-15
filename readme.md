@@ -1,4 +1,4 @@
-\# Hospital Patient Readmission Analysis
+## Hospital Patient Readmission Analysis
 
 
 
@@ -10,7 +10,7 @@ predictive model.
 
 
 
-\## Business Problem
+## Business Problem
 
 
 
@@ -24,7 +24,7 @@ interventions where they matter most.
 
 
 
-\## Key Findings
+## Key Findings
 
 
 
@@ -37,25 +37,25 @@ interventions where they matter most.
 
 
 
-\## Tools \& Technologies
+## Tools & Technologies
 
 
 
-\- \*\*SQL (MySQL)\*\* — data ingestion, cleaning, and 8 analytical queries
+- **SQL (MySQL)** — data ingestion, cleaning, and 8 analytical queries
 
-\- \*\*Python\*\* — Pandas, NumPy, scikit-learn for EDA and logistic regression
+- **Python** — Pandas, NumPy, scikit-learn for EDA and logistic regression
 
-\- \*\*Power BI\*\* — 3-page interactive dashboard with DAX measures
+- **Power BI** — 3-page interactive dashboard with DAX measures
 
-\- \*\*Snowflake\*\* — cloud data warehouse with Time Travel and zero-copy clone
-
-
-
-\## Architecture
+- **Snowflake** — cloud data warehouse with Time Travel and zero-copy clone
 
 
 
-Raw CSV → MySQL (cleaning \& analysis) → Python (EDA \& logistic regression) → Power BI (visualisation) → Snowflake (cloud data warehouse)
+## Architecture
+
+
+
+Raw CSV → MySQL (cleaning & analysis) → Python (EDA & logistic regression) → Power BI (visualisation) → Snowflake (cloud data warehouse)
 
 
 
@@ -65,7 +65,7 @@ statistical modelling, business intelligence, and cloud warehousing.
 
 
 
-\## Repository Structure
+## Repository Structure
 
 
 
@@ -75,11 +75,11 @@ healthcare-readmission-analysis/
 
 ├── data/
 
-│   ├── diabetic\_data.csv           # Raw UCI dataset (101,766 records, 50 columns)
+│   ├── diabetic_data.csv           # Raw UCI dataset (101,766 records, 50 columns)
 
-│   ├── diabetic\_cleaned.csv        # Cleaned dataset (101,763 records, 47 columns)
+│   ├── diabetic_cleaned.csv        # Cleaned dataset (101,763 records, 47 columns)
 
-│   ├── feature\_importance.csv      # Model coefficients for BI feature chart
+│   ├── feature_importance.csv      # Model coefficients for BI feature chart
 
 │   └── predictions.csv             # Model output (actual vs predicted) for BI
 
@@ -87,43 +87,43 @@ healthcare-readmission-analysis/
 
 ├── sql/
 
-│   ├── 01\_create\_schema.sql        # DDL — table definitions \& constraints
+│   ├── 01_create_schema.sql        # DDL — table definitions & constraints
 
-│   ├── 02\_load\_data.sql            # Bulk data ingestion (LOAD DATA INFILE)
+│   ├── 02_load_data.sql            # Bulk data ingestion (LOAD DATA INFILE)
 
-│   ├── 03\_cleaning.sql             # Null handling, type casting, feature derivation
+│   ├── 03_cleaning.sql             # Null handling, type casting, feature derivation
 
-│   └── 04\_analysis\_queries.sql     # 8 analytical queries (CTEs, window functions)
+│   └── 04_analysis_queries.sql     # 8 analytical queries (CTEs, window functions)
 
 │
 
 ├── notebooks/
 
-│   └── readmission\_analysis.ipynb  # EDA, statistical analysis, ML pipeline
+│   └── readmission_analysis.ipynb  # EDA, statistical analysis, ML pipeline
 
 │
 
 ├── powerbi/
 
-│   └── readmission\_dashboard.pbix  # 3-page interactive report with DAX measures
+│   └── readmission_dashboard.pbix  # 3-page interactive report with DAX measures
 
 │
 
 ├── snowflake/
 
-│   └── snowflake\_queries.sql       # Cloud DW — schema, COPY INTO, Time Travel
+│   └── snowflake_queries.sql       # Cloud DW — schema, COPY INTO, Time Travel
 
 │
 
 ├── reports/
 
-│   ├── eda\_distributions.png       # Exploratory analysis visualisations
+│   ├── eda_distributions.png       # Exploratory analysis visualisations
 
-│   ├── model\_evaluation.png        # ROC curve \& feature importance
+│   ├── model_evaluation.png        # ROC curve & feature importance
 
-│   ├── dashboard\_preview.png       # Power BI dashboard screenshot
+│   ├── dashboard_preview.png       # Power BI dashboard screenshot
 
-│   └── insight\_summary.pdf         # Executive findings report
+│   └── insight_summary.pdf         # Executive findings report
 
 │
 
@@ -131,19 +131,19 @@ healthcare-readmission-analysis/
 
 
 
-\## Model Performance
+## Model Performance
 
 
 
-\- Algorithm: Logistic Regression
+- Algorithm: Logistic Regression
 
-\- ROC-AUC Score: 0.643
+- ROC-AUC Score: 0.643
 
-\- Precision: 51% |  Recall: 1%
+- Precision: 51% |  Recall: 1%
 
 
 
-\## Dataset
+## Dataset
 
 
 
@@ -153,11 +153,11 @@ Source: https://www.kaggle.com/datasets/brandao/diabetes
 
 
 
-\## Author
+## Author
 
 
 
-Bharath Sattivelou | \[LinkedIn](https://linkedin.com/in/bharath20)
+Bharath Sattivelou | [LinkedIn](https://linkedin.com/in/bharath20)
 
 
 
